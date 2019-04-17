@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = 'micro' -n -w
+	editor = 'micro'
 	excludesfile = ~/.gitignore
 
 [alias]
