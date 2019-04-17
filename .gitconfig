@@ -11,8 +11,8 @@
 
 [core]
   pager = less -FRSX
-	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
-	excludesfile = /Users/pedrorio/.gitignore
+	editor = 'micro' -n -w
+	excludesfile = ~/.gitignore
 
 [alias]
   co = checkout
@@ -58,5 +58,6 @@
 	required = true
 [commit]
 	gpgsign = true
+	template = ~/.gitmessage
 [gpg]
 	program = gpg
