@@ -53,3 +53,4 @@ SPACESHIP_BATTERY_SHOW=always
 source $ZSH/oh-my-zsh.sh
 
 eval "$(anyenv init -)"
+export PATH="/usr/local/sbin:$PATH"

@@ -11,8 +11,8 @@
 
 [core]
   pager = less -FRSX
-	editor = 'micro'
-	excludesfile = ~/.gitignore
+  editor = 'micro'
+  excludesfile = ~/.gitignore
 
 [alias]
   co = checkout
@@ -43,21 +43,16 @@
   autocorrect = 1
 
 [push]
-	default = simple
+  default = simple
 
 [branch "master"]
   mergeoptions = --no-edit
-[user]
-	email = pedrocacaisrio@gmail.com
-	name = Pedro Rio
-	signingkey = 78C7D82C26B36450
+
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+  clean = git-lfs clean -- %f
+  smudge = git-lfs smudge -- %f
+  process = git-lfs filter-process
+  required = true
+	
 [commit]
-	gpgsign = true
-	template = ~/.gitmessage
-[gpg]
-	program = gpg
+  template = ~/.gitmessage
