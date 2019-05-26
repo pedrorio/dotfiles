@@ -16,8 +16,6 @@ brew "netdata"
 brew "git"
 brew "git-extras"
 brew "git-lfs"
-brew "git-standup"
-brew "karn"
 
 # security
 brew "gnupg"
@@ -32,7 +30,7 @@ brew "anyenv"
 brew "heroku"
 brew "azure-cli"
 brew "awscli"
-brew "google-cloud-sdk"
+cask "google-cloud-sdk"
 
 # repo providers
 brew "hub"
@@ -48,8 +46,8 @@ cask "minikube"
 brew "kubernetes-cli"
 brew "kubernetes-helm"
 brew "kubectx"
-brew "kompose" # convert docker-compose to kubernetes
-brew "kubespy" # observe kubernetes' resources in real time
+brew "kompose"
+brew "kubespy"
 
 # infrastructure as code
 brew "pulumi"
@@ -105,9 +103,9 @@ brew "socat"
 
 # forensics
 brew "sleuthkit"
-brew "authopsy"
 
 # passwords
+cask "1password-cli"
 brew "hashcat"
 brew "aircrack-ng"
 brew "reaver"
@@ -155,5 +153,6 @@ cask "datagrip"
 cask "rubymine"
 
 cask "robo-3t"
-cask "sequel-pro"
+cask "pgadmin4"
+cask "mysqlworkbench"
 cask "zeplin"
