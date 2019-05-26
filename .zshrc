@@ -6,7 +6,6 @@ if [[ -n $SSH_CONNECTION ]]; then
 else
 	export VISUAL=micro
 	export EDITOR="$VISUAL"
-	# export EDITOR=webstorm
 fi
 
 [[ -f "$HOME/.aliases" ]] && source "$HOME/.aliases"

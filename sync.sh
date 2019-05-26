@@ -6,6 +6,7 @@ ln -sf "$(pwd)"/.gitignore ~/.gitignore
 ln -sf "$(pwd)"/.gitmessage ~/.gitmessage
 ln -sf "$(pwd)"/.gitconfig.pedrorio ~/Code/pedrorio/.gitconfig
 ln -sf "$(pwd)"/.gitconfig.matilderosa ~/Code/matilderosa/.gitconfig
+ln -sf "$(pwd)"/.gitconfig.abihome ~/Code/matilderosa/Abihome/.gitconfig
 ln -sf "$(pwd)"/Brewfile ~/Brewfile
 
 if ! which brew >& /dev/null;then

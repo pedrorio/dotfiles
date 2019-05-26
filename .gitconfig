@@ -62,3 +62,6 @@
 
 [includeIf "gitdir:~/Code/matilderosa/**"]
   path = ~/Code/matilderosa/.gitconfig
+
+[includeIf "gitdir:~/Code/matilderosa/Abihome/**"]
+  path = ~/Code/matilderosa/Abihome/.gitconfig
