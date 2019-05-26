@@ -4,8 +4,8 @@ ln -sf "$(pwd)"/.zshrc ~/.zshrc
 ln -sf "$(pwd)"/.gitconfig ~/.gitconfig
 ln -sf "$(pwd)"/.gitignore ~/.gitignore
 ln -sf "$(pwd)"/.gitmessage ~/.gitmessage
-ln -sf "$(pwd)"/.gitconfig.pedrorio ~/Code/pedrorio/.gitconfig.pedrorio
-ln -sf "$(pwd)"/.gitconfig.matilderosa ~/Code/matilderosa/.gitconfig.matilderosa
+ln -sf "$(pwd)"/.gitconfig.pedrorio ~/Code/pedrorio/.gitconfig
+ln -sf "$(pwd)"/.gitconfig.matilderosa ~/Code/matilderosa/.gitconfig
 ln -sf "$(pwd)"/Brewfile ~/Brewfile
 
 if ! which brew >& /dev/null;then

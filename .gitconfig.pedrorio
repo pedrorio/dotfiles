@@ -1,8 +1,13 @@
+[core]
+  sshCommand = "ssh-add -D && ssh -i ~/.ssh/pedrorio/github_key"
+  
 [user]
   email = pedrocacaisrio@gmail.com
   name = Pedro Rio
   signingkey = 78C7D82C26B36450
+  
 [commit]
   gpgsign = true
+  
 [gpg]
   program = gpg
