@@ -1,5 +1,5 @@
 [core]
-  sshCommand = "ssh-add -D && ssh -i ~/.ssh/pedrorio/github_key"
+  sshCommand = "ssh -i ~/.ssh/pedrorio/github_key"
   
 [user]
   email = pedrocacaisrio@gmail.com

@@ -1,5 +1,5 @@
 [core]
-  sshCommand = "ssh-add -D && ssh -i ~/.ssh/matilderosa/abi-gitlab"
+  sshCommand = "ssh -i ~/.ssh/matilderosa/abi-gitlab"
 
 [user]
   email = matilderosa3@hotmail.com
