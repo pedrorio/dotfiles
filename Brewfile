@@ -1,16 +1,13 @@
+tap "homebrew/bundle"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "homebrew/cask"
-tap "homebrew/cask-versions"
-tap "homebrew/bundle"
+tap "heroku/brew"
+tap "joshuaclayton/formulae"
+tap "sambadevi/powerlevel9k"
 
-# tor
-brew "tor"
-brew "nyx"
-brew "ooniprobe"
-
-# monitoring
-brew "netdata"
+brew "mas"
+mas "Xcode", id: 497799835
 
 # git
 brew "git"
@@ -22,24 +19,26 @@ brew "gnupg"
 brew "openssl"
 brew "openssh"
 
-# editor and envs
-brew "micro"
+# language version manager
 brew "anyenv"
+
+# languages
+brew "r"
+
+# editors
+brew "micro"
+cask "sublime-text"
 
 # cloud providers
 brew "heroku"
+brew "heroku-node"
+cask "google-cloud-sdk"
 brew "azure-cli"
 brew "awscli"
-cask "google-cloud-sdk"
-
-# repo providers
-brew "hub"
 
 # docker
-brew "docker"
-brew "docker-compose"
-brew "docker-machine"
 cask 'docker'
+cask 'xquartz'
 
 # kubernetes
 cask "minikube"
@@ -52,7 +51,10 @@ brew "kubespy"
 # infrastructure as code
 brew "pulumi"
 
-# yarn
+#build tools
+brew "cmake"
+
+# package managers
 brew "yarn"
 
 # automated browser
@@ -63,64 +65,31 @@ cask "chromedriver"
 brew "ffmpeg"
 brew "imagemagick"
 
-# databases
-brew "sqlite"
-brew "mysql", restart_service: true
-brew "postgresql", restart_service: true
-brew "mongodb", restart_service: true
-brew "neo4j", restart_service: true
+# graphical computation
+brew "readline"
+brew "graphviz"
 
-# other services
-brew "nginx", restart_service: true
-brew "redis", restart_service: true
-brew "elasticsearch", restart_service: true
-brew "kibana", restart_service: true
-brew "metricbeat", restart_service: true
-brew "rabbitmq", restart_service: true
-brew "kafka", restart_service: true
+# databases
+brew "mysql"
+brew "postgresql"
+
+# database admin
+cask "sequel-pro"
+cask "robo-3t"
 
 # admin tools
 brew "grep"
-brew "rsync"
 brew "htop"
-brew "multitail"
-brew "rsyslog"
 brew "tree"
 brew "wget"
 brew "whois"
 brew "speedtest-cli"
 
-# packets
-brew "tcpdump"
-brew "ngrep"
-brew "wireshark"
-
-# scan ports
-brew "nmap"
-brew "masscan"
-brew "netcat"
-brew "socat"
-
-# forensics
-brew "sleuthkit"
-
-# passwords
-cask "1password-cli"
-brew "hashcat"
-brew "aircrack-ng"
-brew "reaver"
-brew "truecrack"
+# utils
+cask "the-unarchiver"
 
 # p2p
-brew "ipfs"
-brew "webtorrent-cli"
 cask "webtorrent"
-
-# IM
-cask "signal"
-cask "zoomus"
-# cask "google-hangouts"
-# cask "slack"
 
 # browser
 cask "google-chrome"
@@ -131,28 +100,41 @@ cask "nordvpn"
 # media
 cask "vlc"
 
-# network monitoring
-# cask "wireshark"
-# cask "metasploit"
+# menu bar
+mas "MenuBar Stats", id: 714196447
+mas "Divvy", id: 413857545
+mas "Aware", id: 1082170746
 
-# management
-brew "tasksh"
+# security
+mas "Airmail", id: 918858936
+mas "1Password 7", id: 1333542190
+cask "nordvpn"
 
-# apps from apple store
-mas "onepassword7", id: 1333542190
+# apple office
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Keynote", id: 409183694
-mas "Xcode", id: 497799835
-mas "bear", id: 1091189122
-mas "Divvy", id: 413857545
-mas "slackmacgap", id: 803453959
 
+# productivity
+mas "Bear", id: 1091189122
+mas "MindNode", id: 1289197285
+
+# design
+cask "figma"
+
+# graphql
+cask "graphql-playground"
+
+# ide
+cask "rstudio"
+cask "mactex"
 cask "webstorm"
-cask "datagrip"
+cask "pycharm"
+cask "clion"
 cask "rubymine"
+cask "datagrip"
 
-cask "robo-3t"
-cask "pgadmin4"
-cask "mysqlworkbench"
-cask "zeplin"
+# communication
+cask "signal"
+mas "WhatsApp", id: 1147396723
+mas "Slack", id: 803453959

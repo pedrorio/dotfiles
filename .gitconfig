@@ -12,7 +12,7 @@
 [core]
   pager = less -FRSX
   editor = 'micro'
-  excludesfile = ~/.gitignore
+	excludesfile = /Users/pedrorio/.gitignore
 
 [alias]
   co = checkout
