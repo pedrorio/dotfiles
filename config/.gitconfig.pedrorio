@@ -1,5 +1,5 @@
-[core]
-  sshCommand = "ssh -i ~/.ssh/pedrorio/*"
+#[core]
+#  sshCommand = "ssh -i ~/.ssh/pedrorio/*"
 
 [user]
   email = pedrocacaisrio@gmail.com
