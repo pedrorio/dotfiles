@@ -1,5 +1,0 @@
-[core]
-  sshCommand = "ssh -i ~/.ssh/matilderosa/abi-gitlab"
-[user]
-  email = matilde@abihome.de
-  name = Matilde Rosa

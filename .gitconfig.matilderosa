@@ -1,6 +1,0 @@
-[core]
-  sshCommand = "ssh -i ~/.ssh/matilderosa/bitbucket"
-
-[user]
-  email = matilde.rosa12@hotmail.com
-  name = Matilde Rosa

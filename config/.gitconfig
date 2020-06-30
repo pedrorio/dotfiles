@@ -53,15 +53,9 @@
   smudge = git-lfs smudge -- %f
   process = git-lfs filter-process
   required = true
-	
+
 [commit]
   template = ~/.gitmessage
 
 [includeIf "gitdir:~/Code/pedrorio/**"]
   path = ~/Code/pedrorio/.gitconfig
-
-[includeIf "gitdir:~/Code/matilderosa/**"]
-  path = ~/Code/matilderosa/.gitconfig
-
-[includeIf "gitdir:~/Code/matilderosa/Abihome/**"]
-  path = ~/Code/matilderosa/Abihome/.gitconfig

@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+export ZSH_CUSTOM="$ZSH/custom"
 
 if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR=micro
@@ -49,7 +50,27 @@ SPACESHIP_HOST_SHOW=always
 SPACESHIP_HOST_SHOW_FULL=true
 SPACESHIP_BATTERY_SHOW=always
 
-source $ZSH/oh-my-zsh.sh
+source "$ZSH/oh-my-zsh.sh"
+
+# export ANYENV_DEFINITION_ROOT="$HOME/.anyenv/anyenv-install"
+export PATH="$HOME/.anyenv/bin:$PATH"
 
 eval "$(anyenv init -)"
-export PATH="/usr/local/sbin:$PATH"
+
+#export PATH="/usr/local/sbin:$PATH"
+
+export CC=gcc-9
+export CXX=g++-9
+
+export OMPI_CC=gcc-9
+export OMPI_CXX=g++-9
+
+#export CC=/usr/bin/clang
+#export CXX=/usr/bin/clang++
+
+#export CFLAGS=-fno-stack-check
+#export CXXFLAGS=-fno-stack-check
+#export MACOSX_DEPLOYMENT_TARGET=10.14
+
+export CPLUS_INCLUDE_PATH=/usr/local/include
+export LIBRARY_PATH=/usr/local/lib
