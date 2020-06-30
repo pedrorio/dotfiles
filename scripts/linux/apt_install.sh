@@ -54,6 +54,9 @@ install nmap
 
 install xclip
 install jq
+install docker-ce
+install docker-ce-cli
+install containerd.io
 
 #install pidgin
 #install gimp
