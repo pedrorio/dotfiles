@@ -36,6 +36,7 @@ install imagemagick
 install postgresql
 #install neo4j
 
+install tmux
 install grep
 install htop
 install tree
