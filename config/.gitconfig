@@ -57,6 +57,9 @@
 [commit]
   template = ~/.gitmessage
 
+[includeIf "gitdir:~/Code/dotfiles/**"]
+  path = ~/Code/pedrorio/.gitconfig
+
 [includeIf "gitdir:~/Code/pedrorio/**"]
   path = ~/Code/pedrorio/.gitconfig
 
