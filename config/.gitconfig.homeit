@@ -1,0 +1,16 @@
+#[core]
+#  sshCommand = "ssh -i ~/.ssh/homeit/*"
+
+[user]
+  email = prio@homeit.io
+  name = Pedro Rio
+  signingkey = B3C9E62D7F6FA6BA
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgsign = true
+
+[gpg]
+  program = gpg

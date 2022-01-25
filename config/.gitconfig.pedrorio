@@ -1,0 +1,16 @@
+#[core]
+#  sshCommand = "ssh -i ~/.ssh/pedrorio/*"
+
+[user]
+  email = pedrocacaisrio@gmail.com
+  name = Pedro Rio
+  signingkey = 15A377BF013CFA23
+
+[commit]
+  gpgsign = true
+
+[tag]
+  gpgsign = true
+
+[gpg]
+  program = gpg
