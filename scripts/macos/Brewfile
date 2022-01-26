@@ -132,6 +132,7 @@ brew "viu" # image viwer
 brew "glow" # markdown viewer
 brew "tldr" # man alt
 brew "dog" # dig alt
+brew "entr"
 
 brew "curl"
 brew "wget"
