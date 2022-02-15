@@ -34,6 +34,7 @@ asdf:
 	asdf plugin add Python
 	asdf plugin add java
 	asdf plugin add rust
+	asdf plugin add ruby
 
 languages:
 	asdf install nodejs latest
@@ -44,6 +45,8 @@ languages:
 # 	asdf install java latest
 	asdf install rust latest
 	asdf global rust latest
+	asdf install ruby latest
+	asdf global ruby latest
 
 latex:
 	sudo tlmgr update --self

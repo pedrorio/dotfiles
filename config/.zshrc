@@ -27,16 +27,22 @@ if [ -S "${HOME}/.gnupg/S.gpg-agent.ssh" ]; then
 fi
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
+gpg-connect-agent updatestartuptty /bye > /dev/null
 
 # compiler defaults
-# export CC=gcc-11
-# export CXX=g++-11
-# export OMPI_CC=gcc-11
-# export OMPI_CXX=g++-11
+export CC=gcc-11
+export CXX=g++-11
+export OMPI_CC=gcc-11
+export OMPI_CXX=g++-11
 
+# For esp-idf
 # export CPPFLAGS=-fno-stack-check
-export CPPFLAGS="-Wno-error=class-memaccess -Wno-error=format -Wno-error=format-truncation -Wno-error=format-overflow -Wno-error=implicit-function-declaration"
-export CXXFlags=-std=c++11
+# export CPPFLAGS="-Wno-error=class-memaccess -Wno-error=format -Wno-error=format-truncation -Wno-error=format-overflow -Wno-error=implicit-function-declaration"
+
+# export CXXFlags=-std=c++11
+
+export CPATH="$(brew --prefix)/include"
+export LIBRARY_PATH="$(brew --prefix)/lib"
 
 # export CPATH="$(brew --prefix)/include:$(xcrun --show-sdk-path)/usr/include"
 # export LIBRARY_PATH="$(brew --prefix)/lib:$(xcrun --show-sdk-path)/usr/lib"
@@ -46,10 +52,8 @@ export CXXFlags=-std=c++11
 # export CXXFLAGS="-I$(brew --prefix)/include -I$(xcrun --show-sdk-path)/usr/include"
 # export LDFLAGS="-L$(brew --prefix)/lib -L$(xcrun --show-sdk-path)/usr/lib"
 
-export PATH=$HOME/.espressif/tools/xtensa-esp32-elf/esp-2021r2-8.4.0/xtensa-esp32-elf/bin:$PATH
+# For esp-idf
 export IDF_PATH="$HOME/esp/esp-idf"
-# export IDF_PATH="$HOME/Code/homeit/firmware/v1/esp-wroom32/esp-idf"
-
 alias get_idf=". ${IDF_PATH}/export.sh"
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh

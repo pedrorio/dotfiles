@@ -1,6 +1,3 @@
-#[core]
-#  sshCommand = "ssh -i ~/.ssh/homeit/*"
-
 [user]
   email = prio@homeit.io
   name = Pedro Rio

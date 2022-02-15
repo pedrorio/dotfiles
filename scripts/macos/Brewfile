@@ -6,6 +6,8 @@ tap "joshuaclayton/formulae"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 tap "sambadevi/powerlevel9k"
+tap "heroku/brew"
+tap "elastic/tap"
 
 # basics
 brew "mas"
@@ -72,6 +74,7 @@ brew "plantuml"
 cask "google-cloud-sdk"
 # brew "azure-cli"
 # brew "awscli"
+brew "heroku"
 
 # docker
 cask 'xquartz'
@@ -112,6 +115,7 @@ brew "mysql"
 brew "postgresql"
 brew "sqlite3"
 brew "redis"
+brew "elastic/tap/elasticsearch-full"
 
 # database admin
 cask "sequel-pro"
