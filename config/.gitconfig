@@ -12,7 +12,7 @@
 [core]
   pager = less -FRSX
   editor = 'micro'
-	excludesfile = /Users/pedrorio/.gitignore
+	excludesfile = ~/.gitignore
 
 [alias]
   co = checkout
@@ -63,8 +63,8 @@
 [includeIf "gitdir:~/Code/pedrorio/**"]
   path = ~/Code/pedrorio/.gitconfig
 
-[includeIf "gitdir:~/Code/homeit/**"]
-  path = ~/Code/homeit/.gitconfig
+[includeIf "gitdir:~/Code/pricehubble/**"]
+  path = ~/Code/pricehubble/.gitconfig
   
 [init]
   defaultBranch = main

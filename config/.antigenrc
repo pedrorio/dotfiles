@@ -4,6 +4,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle git-extras
 antigen bundle common-aliases
+
 antigen bundle macos
 antigen bundle brew
 

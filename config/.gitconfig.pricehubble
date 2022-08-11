@@ -1,7 +1,7 @@
 [user]
-  email = prio@homeit.io
+  email = pedro.rio@pricehubble.com
   name = Pedro Rio
-  signingkey = B3C9E62D7F6FA6BA
+  signingkey = 403801CDD453D035
 
 [commit]
   gpgsign = true

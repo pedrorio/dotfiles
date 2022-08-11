@@ -3,9 +3,9 @@ EXECS = macos common
 .PHONY: $(EXECS) common
 all: $(EXECS) common
 
-common: repos editors keys
+# common: repos editors keys
 
-keys: export_keys 
+# keys: export_keys 
 
 macos:
 	$(MAKE) --directory=macos all
@@ -16,8 +16,8 @@ linux_server:
 linux_desktop:
 	$(MAKE) --directory=linux desktop
 
-repos:
-	$(MAKE) --directory=repos all
+# repos:
+# 	$(MAKE) --directory=repos all
 
 editors:
 	micro -plugin install monokai-dark
@@ -31,7 +31,7 @@ editors:
 asdf:
 	asdf plugin add nodejs
 # 	asdf plugin add R
-	asdf plugin add Python
+	asdf plugin add python
 	asdf plugin add java
 	asdf plugin add rust
 	asdf plugin add ruby
@@ -40,8 +40,8 @@ languages:
 	asdf install nodejs latest
 	asdf global nodejs latest
 # 	asdf install R latest
-	asdf install Python latest
-	asdf global Python latest
+	asdf install python latest
+	asdf global python latest
 # 	asdf install java latest
 	asdf install rust latest
 	asdf global rust latest
@@ -62,7 +62,12 @@ latex:
 
 esp-idf:
 	mkdir -p ~/esp
-	cd ~/esp
-	git clone -b v4.3.2 --recursive https://github.com/espressif/esp-idf.git
-	cd esp-idf
+	cd ~/esp \
+	git clone -b v4.3.2 --recursive https://github.com/espressif/esp-idf.git \
+	cd esp-idf \
 	PIP_EXTRA_INDEX_URL=https://dl.espressif.com/pypi ./install.sh esp32
+
+zsh:
+	chsh -s $(which zsh)
+# 	chsh -s /bin/zsh
+# 	command -v zsh | sudo tee -a /etc/shells

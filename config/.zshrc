@@ -1,4 +1,6 @@
+# MacOS / Linux
 eval "$(/opt/homebrew/bin/brew shellenv)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # editors
 if [[ -n $SSH_CONNECTION ]]; then
@@ -36,16 +38,13 @@ export OMPI_CC=gcc-11
 export OMPI_CXX=g++-11
 
 # For esp-idf
-# export CPPFLAGS=-fno-stack-check
-# export CPPFLAGS="-Wno-error=class-memaccess -Wno-error=format -Wno-error=format-truncation -Wno-error=format-overflow -Wno-error=implicit-function-declaration"
 
-# export CXXFlags=-std=c++11
+# export CPATH="$(brew --prefix)/include"
+# export LIBRARY_PATH="$(brew --prefix)/lib"
 
-export CPATH="$(brew --prefix)/include"
-export LIBRARY_PATH="$(brew --prefix)/lib"
-
-# export CPATH="$(brew --prefix)/include:$(xcrun --show-sdk-path)/usr/include"
-# export LIBRARY_PATH="$(brew --prefix)/lib:$(xcrun --show-sdk-path)/usr/lib"
+# # everything else
+export CPATH="$(brew --prefix)/include:$(xcrun --show-sdk-path)/usr/include"
+export LIBRARY_PATH="$(brew --prefix)/lib:$(xcrun --show-sdk-path)/usr/lib"
 
 # export CPPFLAGS="-I$(brew --prefix)/include -I$(xcrun --show-sdk-path)/usr/include"
 # export CFLAGS="-I$(brew --prefix)/include -I$(xcrun --show-sdk-path)/usr/include"
@@ -53,7 +52,11 @@ export LIBRARY_PATH="$(brew --prefix)/lib"
 # export LDFLAGS="-L$(brew --prefix)/lib -L$(xcrun --show-sdk-path)/usr/lib"
 
 # For esp-idf
-export IDF_PATH="$HOME/esp/esp-idf"
-alias get_idf=". ${IDF_PATH}/export.sh"
+# export IDF_PATH="$HOME/esp/esp-idf"
+# alias get_idf=". ${IDF_PATH}/export.sh"
 
+
+# MacOS / Linux
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+# source /opt/homebrew/opt/asdf/libexec/asdf.sh
+# source $(brew --prefix)/opt/asdf/libexec/asdf.sh

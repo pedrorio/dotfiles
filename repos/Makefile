@@ -1,4 +1,4 @@
-EXECS = pedrorio homeit
+EXECS = pedrorio homeit pricehubble
 
 .PHONY: $(EXECS)
 all: $(EXECS)
@@ -6,5 +6,5 @@ all: $(EXECS)
 pedrorio:
 	$(MAKE) --directory=pedrorio all
 
-homeit:
-	$(MAKE) --directory=homeit all
+pricehubble:
+	$(MAKE) --directory=pricehubble all

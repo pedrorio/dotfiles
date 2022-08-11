@@ -21,11 +21,6 @@ install git-lfs
 
 install gnupg
 install openvpn
-#install openssh
-
-#install anyenv
-
-#install r
 
 install cmake
 
@@ -50,13 +45,15 @@ install zsh
 install curl
 install file
 install nmap
-#install micro
+
+install micro
 
 install xclip
 install jq
-install docker-ce
-install docker-ce-cli
-install containerd.io
+
+# install docker-ce
+# install docker-ce-cli
+# install containerd.io
 
 #install pidgin
 #install gimp
@@ -65,5 +62,6 @@ install containerd.io
 #install opennlp
 
 install snapd
+install texlive-latex-extra
 
 sudo apt upgrade -y

@@ -1,4 +1,4 @@
 .idea
 .code
-secrets/pgp
+secrets/pgp*
 !secrets/Makefile

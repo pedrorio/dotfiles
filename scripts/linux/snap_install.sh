@@ -15,3 +15,22 @@ install pycharm-professional --classic
 install clion --classic
 install webstorm --classic
 install datagrip --classic
+
+install chromium
+
+install slack --classic
+install zoom-client
+
+install notion-snap
+install figma-linux
+
+install sublime-text --classic
+
+install vlc
+
+install google-cloud-sdk
+
+install 1password
+install yubioath-desktop
+
+install mqttx

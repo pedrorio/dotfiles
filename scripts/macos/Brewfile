@@ -28,7 +28,6 @@ mas "Yubico Authenticator", id: 1497506650
 brew "zsh"
 brew "antigen"
 
-
 # video and image processing libs
 brew "ffmpeg"
 brew "imagemagick"
@@ -67,10 +66,8 @@ cask "sublime-text"
 # latex
 cask "basictex"
 brew "plantuml"
-# cask "mactex"
 
 # cloud
-# brew "heroku"
 cask "google-cloud-sdk"
 # brew "azure-cli"
 # brew "awscli"
@@ -80,16 +77,29 @@ brew "heroku"
 cask 'xquartz'
 
 # kubernetes
-# brew "hyperkit"
-# brew "docker"
-# brew "kubectl"
-# brew "minikube"
-# brew "docker-compose"
 cask "docker"
 brew "kubectx"
 brew "helm"
-# brew "kompose"
-# brew "kubespy"
+
+# Non-cask install
+# brew uninstall docker
+
+# For m1
+# brew "podman"
+
+# For non m1
+# brew "hyperkit" # hypervisor, use podman with m1
+# brew "docker" # docker cli
+# brew "docker-compose"
+
+# For both
+# brew "nerdctl" # containerd cli # only linux, wait for PR
+# brew "kubectl" # kubernetes cli
+# brew "kubectx"
+# brew "minikube" # local cluster
+# brew "helm"
+# brew "istioctl"
+# brew "linkerd"
 
 # infrastructure as code
 brew "pulumi"
@@ -137,6 +147,7 @@ brew "glow" # markdown viewer
 brew "tldr" # man alt
 brew "dog" # dig alt
 brew "entr"
+brew "nmap"
 
 brew "curl"
 brew "wget"
@@ -183,6 +194,12 @@ mas "Canary", id: 1236045954
 cask "figma"
 # product
 cask "notion"
+cask "loom"
+cask "shapr3d"
+
+# iot
+brew "arduino-cli"
+cask "arduino"
 
 # graphql
 # cask "graphql-playground"
